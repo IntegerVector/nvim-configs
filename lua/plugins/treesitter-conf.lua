@@ -34,7 +34,9 @@ treesitter.setup {
   rainbow = {
     enable = true,
     extended_mode = true,
-    max_file_lines = nil
+    max_file_lines = nil,
+    query = 'rainbow-parens',
+    trategy = require('ts-rainbow').strategy.global
   }
 }
 

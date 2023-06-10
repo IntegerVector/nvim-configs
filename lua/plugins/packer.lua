@@ -14,7 +14,6 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim' -- Dependency for other plugins
   use 'nvim-telescope/telescope.nvim' -- File search
   use 'nvim-telescope/telescope-file-browser.nvim' -- File browsing
-  use 'nvim-telescope/telescope-media-files.nvim' -- Media files preview
   use 'nvim-lualine/lualine.nvim' -- Status bar
   use 'neovim/nvim-lspconfig' -- LSP
   use 'williamboman/mason.nvim'
@@ -28,7 +27,7 @@ packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
-  use 'p00f/nvim-ts-rainbow'
+  use 'HiPhish/nvim-ts-rainbow2'
 end)
 
 require 'plugins.color-conf'

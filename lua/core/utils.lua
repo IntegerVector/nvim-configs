@@ -20,7 +20,19 @@ utils.reload_nvim = function()
   end
 
   dofile(vim.env.MYVIMRC)
-  vim.notify("Nvim user configurations reloaded", vim.log.levels.INFO)
+  vim.notify('Nvim user configurations reloaded', vim.log.levels.INFO)
+end
+
+utils.copy_file_name = function()
+  vim.cmd("let @+ = expand('%:t')")
+end
+
+utils.copy_full_path = function()
+  vim.cmd("let @+ = expand('%:p')")
+end
+
+utils.copy_relative_path = function()
+  vim.cmd("let @+ = expand('%')")
 end
 
 return utils

@@ -28,3 +28,15 @@ utils.new_cmd('Reload', function()
   utils.reload_nvim()
 end, {})
 
+utils.new_cmd('CopyName', function()
+  utils.copy_file_name()
+end, {})
+
+utils.new_cmd('CopyFullPath', function()
+  utils.copy_full_path()
+end, {})
+
+utils.new_cmd('CopyPath', function()
+  utils.copy_relative_path()
+end, {})
+

@@ -17,17 +17,14 @@ telescope.setup {
     }
   },
   extensions = {
-    media_files = {
-      filetypes = {'svg', 'ico', 'png', 'jpg', 'jpeg', 'webm', 'gif'}
-    },
     file_browser = {
       theme = 'ivy',
       initial_mode = 'normal',
       hijack_netrw = true,
+      dir_icon = ''
     }
   }
 }
 
-telescope.load_extension('media_files')
 telescope.load_extension('file_browser')
 
