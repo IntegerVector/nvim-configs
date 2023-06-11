@@ -31,7 +31,7 @@ packer.startup(function(use)
   }
   use 'HiPhish/nvim-ts-rainbow2'
   use 'APZelos/blamer.nvim' -- Git blame
-  use 'rhysd/git-messenger.vim' -- Git messanger
+  use 'rhysd/git-messenger.vim' -- Git messenger
 end)
 
 require 'plugins.color-conf'
@@ -44,4 +44,5 @@ require 'plugins.dap-conf'
 require 'plugins.lspsaga-conf'
 require 'plugins.treesitter-conf'
 require 'plugins.blamer-conf'
+require 'plugins.git-messenger-conf'
 
