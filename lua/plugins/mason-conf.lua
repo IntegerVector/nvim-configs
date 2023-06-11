@@ -1,4 +1,4 @@
-require('mason').setup({
+require('mason').setup {
   ui = {
     icons = {
       package_installed = "+",
@@ -6,7 +6,7 @@ require('mason').setup({
       package_uninstalled = "x"
     }
   }
-})
+}
 
 local protocol = require('vim.lsp.protocol')
 local capabilities = protocol.make_client_capabilities()

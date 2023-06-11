@@ -1,6 +1,8 @@
 local utils = require('core.utils')
 
 vim.g.mapleader = ' '
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 vim.cmd('autocmd!')
 vim.opt.spell = true
@@ -41,8 +43,8 @@ vim.opt.wildignore:append { '*/node_modules/*' }
 vim.opt.wildoptions = 'pum'
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.backupskip = '/tmp/*,/private/tmp/*'
-vim.opt.whichwrap:append "<>[]hl"
-vim.opt.shortmess:append "sI"
+vim.opt.whichwrap:append '<>[]hl'
+vim.opt.shortmess:append 'sI'
 vim.opt.path:append { '**' }
 vim.opt.formatoptions:append { 'r' }
 

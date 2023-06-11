@@ -14,10 +14,12 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim' -- Dependency for other plugins
   use 'nvim-telescope/telescope.nvim' -- File search
   use 'nvim-telescope/telescope-file-browser.nvim' -- File browsing
+  use 'nvim-tree/nvim-tree.lua' -- File tree
+  use 'nvim-tree/nvim-web-devicons' -- Icons for file tree
   use 'nvim-lualine/lualine.nvim' -- Status bar
   use 'neovim/nvim-lspconfig' -- LSP
-  use 'williamboman/mason.nvim'
-  use 'williamboman/mason-lspconfig.nvim'
+  use 'williamboman/mason.nvim' -- LSP setup
+  use 'williamboman/mason-lspconfig.nvim' -- helper for previous
   use 'mfussenegger/nvim-dap' -- Debug
   use 'rcarriga/nvim-dap-ui' -- Debug UI
   use 'jay-babu/mason-nvim-dap.nvim' -- Debug with mason helper
@@ -32,6 +34,7 @@ end)
 
 require 'plugins.color-conf'
 require 'plugins.telescope-conf'
+require 'plugins.nvim-tree-conf'
 require 'plugins.lualine-conf'
 require 'plugins.nvim-highlight-colors-conf'
 require 'plugins.mason-conf'
