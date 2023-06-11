@@ -1,2 +1,2 @@
-vim.api.nvim_set_keymap('n', '<space>g', ':GitMessenger<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<space>m', ':GitMessenger<CR>', { noremap = true })
 
