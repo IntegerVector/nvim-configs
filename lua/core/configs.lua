@@ -47,6 +47,7 @@ vim.opt.whichwrap:append '<>[]hl'
 vim.opt.shortmess:append 'sI'
 vim.opt.path:append { '**' }
 vim.opt.formatoptions:append { 'r' }
+vim.opt.wrap = false
 
 utils.set_tab(2)
 

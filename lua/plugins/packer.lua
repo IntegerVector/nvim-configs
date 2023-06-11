@@ -30,6 +30,8 @@ packer.startup(function(use)
     run = ':TSUpdate'
   }
   use 'HiPhish/nvim-ts-rainbow2'
+  use 'APZelos/blamer.nvim' -- Git blame
+  use 'rhysd/git-messenger.vim' -- Git messanger
 end)
 
 require 'plugins.color-conf'
@@ -41,4 +43,5 @@ require 'plugins.mason-conf'
 require 'plugins.dap-conf'
 require 'plugins.lspsaga-conf'
 require 'plugins.treesitter-conf'
+require 'plugins.blamer-conf'
 
