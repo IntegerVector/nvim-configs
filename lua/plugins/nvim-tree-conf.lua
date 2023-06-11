@@ -27,6 +27,16 @@ require('nvim-tree').setup {
   view = {
     width = 40
   },
+  diagnostics = {
+    enable = true,
+    show_on_dirs = true,
+    icons = {
+      hint = "*",
+      info = "",
+      warning = "",
+      error = "",
+    },
+  },
   renderer = {
     highlight_git = true,
     group_empty = true,
