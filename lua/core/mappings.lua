@@ -29,3 +29,6 @@ vim.keymap.set('n', '<leader><right>', '20<C-w>>')
 vim.keymap.set('n', '<leader><up>', '5<C-w>+')
 vim.keymap.set('n', '<leader><down>', '5<C-w>-')
 
+-- Clear highlighting
+vim.keymap.set('n', '<Esc>', ':noh<Return>')
+
