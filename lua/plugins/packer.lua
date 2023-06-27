@@ -24,6 +24,10 @@ packer.startup(function(use)
   use 'rcarriga/nvim-dap-ui' -- Debug UI
   use 'jay-babu/mason-nvim-dap.nvim' -- Debug with mason helper
   use 'glepnir/lspsaga.nvim' -- LSP tools
+  use 'hrsh7th/nvim-cmp' -- LSP based auto complete
+  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for auto complete
+  use 'hrsh7th/cmp-path' -- For file system path auto completion
+  use 'onsails/lspkind.nvim' -- VScode-like pictograms
   use 'brenoprata10/nvim-highlight-colors' -- Highlight colors
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -42,6 +46,7 @@ require 'plugins.nvim-highlight-colors-conf'
 require 'plugins.mason-conf'
 require 'plugins.dap-conf'
 require 'plugins.lspsaga-conf'
+require 'plugins.cmp-conf'
 require 'plugins.treesitter-conf'
 require 'plugins.blamer-conf'
 require 'plugins.git-messenger-conf'

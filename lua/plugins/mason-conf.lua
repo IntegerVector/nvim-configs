@@ -8,9 +8,6 @@ require('mason').setup {
   }
 }
 
-local protocol = require('vim.lsp.protocol')
-local capabilities = protocol.make_client_capabilities()
-
 local handlers = {
   ['textDocument/publishDiagnostics'] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -31,6 +28,8 @@ local on_attach = function(client, bufnr)
 end
 
 local mason_lsp = require('mason-lspconfig')
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 mason_lsp.setup()
 mason_lsp.setup_handlers {
   function(server_name)
