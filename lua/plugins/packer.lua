@@ -28,6 +28,8 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for auto complete
   use 'hrsh7th/cmp-path' -- For file system path auto completion
   use 'onsails/lspkind.nvim' -- VScode-like pictograms
+  use 'L3MON4D3/LuaSnip' -- Snippets
+  use 'saadparwaiz1/cmp_luasnip' -- Autocompletion with snippets
   use 'brenoprata10/nvim-highlight-colors' -- Highlight colors
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -47,6 +49,7 @@ require 'plugins.mason-conf'
 require 'plugins.dap-conf'
 require 'plugins.lspsaga-conf'
 require 'plugins.cmp-conf'
+require 'plugins.luasnip-conf'
 require 'plugins.treesitter-conf'
 require 'plugins.blamer-conf'
 require 'plugins.git-messenger-conf'
