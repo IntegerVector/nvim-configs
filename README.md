@@ -12,6 +12,6 @@ To remove everything run:
 ./remove.sh
 ```
 
-"./update.sh" script does pulls new version, instead it's just puts configs in nvim folder same as "./install.sh" but without installing Packer.
-Use it when you did some small changes to configuration and you just need to put it to nvim folder quickly
+"./update.sh" script puts configs in nvim folder same as "./install.sh" but without installing Packer.
+Use it when you did some small changes and want to put it to nvim folder quickly
 
