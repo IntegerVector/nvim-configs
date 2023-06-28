@@ -40,6 +40,8 @@ packer.startup(function(use)
   use 'rhysd/git-messenger.vim' -- Git messenger
 end)
 
+
+-- Order of scripts below might be important, so don't change it!
 require 'plugins.color-conf'
 require 'plugins.telescope-conf'
 require 'plugins.nvim-tree-conf'
@@ -48,8 +50,8 @@ require 'plugins.nvim-highlight-colors-conf'
 require 'plugins.mason-conf'
 require 'plugins.dap-conf'
 require 'plugins.lspsaga-conf'
-require 'plugins.cmp-conf'
 require 'plugins.luasnip-conf'
+require 'plugins.cmp-conf'
 require 'plugins.treesitter-conf'
 require 'plugins.blamer-conf'
 require 'plugins.git-messenger-conf'
