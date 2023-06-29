@@ -1,14 +1,11 @@
-local treesitter = require('nvim-treesitter.configs')
-
-treesitter.setup {
+require('nvim-treesitter.configs').setup {
   highlight = {
     enable = true,
-    disable = {},
-    additional_vim_regex_highlighting = true,
+    disable = {}
   },
   indent = {
     enable = true,
-    disable = { 'yaml' },
+    disable = { 'yaml' }
   },
   ensure_installed = {
     'html',
@@ -36,7 +33,7 @@ treesitter.setup {
     extended_mode = true,
     max_file_lines = nil,
     query = 'rainbow-parens',
-    trategy = require('ts-rainbow').strategy.global
+    strategy = require('ts-rainbow').strategy.global
   }
 }
 
