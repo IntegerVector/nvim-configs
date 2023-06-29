@@ -16,16 +16,16 @@ require('lspsaga').setup {
     text_hl_follow = false,
     border_follow = true,
     keys = {
-      exec_action = "o",
-      quit = "q",
-      go_action = "g"
+      exec_action = 'o',
+      quit = 'q',
+      go_action = 'g'
     }
   }
 }
 
 local opts = { noremap = true, silent = true }
 vim.keymap.set('n', 'gr', '<Cmd> Lspsaga lsp_finder<cr>', opts)
-vim.keymap.set('n', '<leader>n', '<Cmd> Lspsaga rename<cr>', opts)
+vim.keymap.set('n', '<F2>', '<Cmd> Lspsaga rename<cr>', opts)
 vim.keymap.set('n', 'K', '<Cmd> Lspsaga hover_doc<cr>', opts)
 vim.keymap.set('n', '<leader>v', '<Cmd> Lspsaga show_line_diagnostics<cr>', opts)
 

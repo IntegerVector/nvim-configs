@@ -24,7 +24,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
   vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
-  vim.keymap.set('n', 'ca', vim.lsp.buf.code_action, bufopts)
+  vim.keymap.set('n', '<leader>n', vim.lsp.buf.code_action, bufopts)
 end
 
 local mason_lsp = require('mason-lspconfig')
