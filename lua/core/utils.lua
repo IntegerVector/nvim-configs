@@ -35,5 +35,9 @@ utils.copy_relative_path = function()
   vim.cmd("let @+ = expand('%')")
 end
 
+utils.set_colorscheme = function(name)
+  vim.cmd(name)
+end
+
 return utils
 

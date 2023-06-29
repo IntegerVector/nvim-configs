@@ -40,3 +40,11 @@ utils.new_cmd('CopyPath', function()
   utils.copy_relative_path()
 end, {})
 
+utils.new_cmd('SetLight', function()
+  utils.set_colorscheme('colorscheme pyte')
+end, {})
+
+utils.new_cmd('SetDark', function()
+  utils.set_colorscheme('colorscheme sonokai')
+end, {})
+
